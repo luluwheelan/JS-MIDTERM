@@ -1,0 +1,9 @@
+extends ../layouts/main.pug
+block content
+  .container
+    header
+      h1= arcadeGame.title
+      small= arcadeGame.status.toLowerCase()
+
+    div
+      = arcadeGame.content || "Your game is lost..."
