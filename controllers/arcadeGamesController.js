@@ -1,4 +1,4 @@
-const Resource = require('../models/resource');
+const ArcadeGame = require('../models/arcadeGame.js');
 const mongoose = require('mongoose');
 
 exports.index = (req, res) => {

@@ -5,14 +5,14 @@ const router = require('express').Router();
 const ArcadeGamesController = require('../controllers/arcadeGamesController');
 
 // Our routes
-router.get('/', ArcadeGamessController.index);
-router.get('/new', ArcadeGamessController.new);
-router.get('/:id', ArcadeGamessController.show); 
-router.get('/:id/edit', ArcadeGamessController.edit);
+router.get('/', ArcadeGamesController.index);
+router.get('/new', ArcadeGamesController.new);
+router.get('/:id', ArcadeGamesController.show); 
+router.get('/:id/edit', ArcadeGamesController.edit);
 
-router.post('/', ArcadeGamessController.create);
-router.post('/update', ArcadeGamessController.update);
-router.post('/destroy', ArcadeGamessController.destroy);
+router.post('/', ArcadeGamesController.create);
+router.post('/update', ArcadeGamesController.update);
+router.post('/destroy', ArcadeGamesController.destroy);
 
 // We have to export our changes
 module.exports = router;
