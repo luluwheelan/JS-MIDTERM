@@ -72,7 +72,7 @@ exports.create = async (req, res) => {
 exports.update = (req, res) => {
     ArcadeGame.updateOne({
             _id: req.body.id
-        }, req.body.arcadeGames, {
+        }, req.body.arcadeGame, {
             runValidators: true
         })
         .then(() => {
